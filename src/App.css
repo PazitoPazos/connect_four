@@ -1,0 +1,88 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.reset-button {
+  margin-bottom: 1rem;
+}
+
+.board {
+  border: 2px solid #ddd;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 1rem;
+  padding: .8rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.disk {
+  cursor: pointer;
+  border: 2px solid #bbb;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.player-disk {
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.red {
+  background-color: #f55;
+}
+
+.yellow {
+  background-color: #ff5;
+}
+
+.game-over {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.game-over .text {
+  font-size: 1.25rem;
+  background: #111;
+  height: 300px;
+  width: 320px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-over .text h2 {
+  margin: .5rem 0 0 0;
+}
+
+.game-over .player-disk {
+  height: 5rem;
+  width: 5rem;
+}
